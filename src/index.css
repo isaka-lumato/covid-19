@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
-  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -14,14 +15,129 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(165, 42, 89, 0.644);
+  /* background-color: #3a386c82; */
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid lightgray;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.return {
+  width: 27px;
+}
+
+.top-right {
+  display: flex;
+  margin: 0 20px;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.mic {
+  margin-right: 10px;
+}
+
+.set {
+  width: 20px;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  background: #ec4c8b;
+;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.body a {
+  border-bottom: 2px solid black;
+}
+
+.back {
+  color: blue;
+  font-size: 25px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: solid #F0EAD6
+ 1px;
+}
+
+.heading {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: larger;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+  margin-left: 10px;
+}
+
+.main-cont {
+  display: flex;
+  background-color: #F0EAD6
+;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  margin: auto;
+  border:3px solid rgba(0, 0, 0, 0.562);
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  background-color: #F0EAD6;
+  justify-content: space-around;
+}
+
+.data-flag {
+text-align: center;
+font-size: larger;
+}
+
+.list {
+  list-style: none;
+}
+
+.list p {
+  background-color: #F0EAD6
+marine;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
 }
