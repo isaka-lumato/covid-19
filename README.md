@@ -5,8 +5,6 @@
 > COVID-19 is a project built using React and redux in this project information on the COVID-19 virus is being fetched from an API. This Application shows data on COVID-19 in European countries, the information is on COVID-19 cases, deaths, people tested etc.
 
 
-Additional description about the project and its features.
-
 # Built With
 
 ### Major languages
@@ -20,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Click here](https://covid-19.netlify.app/) 
+[Click here](covid-19-covid.netlify.app) 
 
 ## Link to video
 [click here](https://www.loom.com/share/45add1fcfce7481baa8b86d5915bcfd5)
