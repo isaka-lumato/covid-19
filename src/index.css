@@ -28,8 +28,6 @@ a {
   justify-content: space-between;
   align-items: center;
   background: rgba(165, 42, 89, 0.644);
-
-  /* background-color: #3a386c82; */
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid lightgray;
 }
