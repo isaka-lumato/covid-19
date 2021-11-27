@@ -1,22 +1,18 @@
-/* eslint-disable */
-
-import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import { fetchData } from "../redux/covidData/covid";
+import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { fetchData } from '../redux/covidData/covid';
 
 function Home() {
   const covidReducer = useSelector((state) => state.covidReducer.covid);
   const dispatch = useDispatch();
-  let Europe = covidReducer.filter((item) => item.continent === "Europe");
+  let Europe = covidReducer.filter((item) => item.continent === 'Europe');
   const loci = useLocation();
   const query = new URLSearchParams(loci.search);
-  const buscar = query.get("buscar") || "";
+  const buscar = query.get('buscar') || '';
 
   const navigate = useNavigate();
-  Europe = Europe.filter((country) =>
-    country.country.includes(buscar.toLocaleUpperCase())
-  );
+  Europe = Europe.filter((country) => country.country.includes(buscar.toLocaleUpperCase()));
   const [searchInput, setSearchInput] = useState(buscar);
 
   useEffect(() => {
@@ -26,14 +22,15 @@ function Home() {
   }, []);
 
   const filterCountry = (e) => {
-    navigate(e.target.value ? `?buscar=${e.target.value}` : "");
+    navigate(e.target.value ? `?buscar=${e.target.value}` : '');
     setSearchInput(e.target.value);
   };
   return (
     <>
       <div className="heading">
-        {" "}
-        <h1>EUROPE COUNTRIES' COVID-19 DATA</h1>{" "}
+        {' '}
+        <h1>EUROPE COUNTRIES COVID-19 DATA</h1>
+        {' '}
       </div>
       <div className="input-box">
         <input
